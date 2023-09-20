@@ -10,7 +10,7 @@ export function min(a: number, b: number): number {
 /***********************************************************************************************************************
  * Fonction qui trie des nombres par ordre croissant
  */
-export function triCroissant(L: readonly number[]): readonly number[] {
+export function triCroissant(L: readonly number[]): number[] {
     return [];
 }
 
@@ -18,27 +18,26 @@ export function triCroissant(L: readonly number[]): readonly number[] {
 /***********************************************************************************************************************
  * Fonction qui trie des nombres par ordre décroissant
  */
-export function triDécroissant(L: Readonly<number[]>): number[] {
-    console.log(L);
+export function triDécroissant(L: readonly number[]): number[] {
     return [];
 }
 
 
 /***********************************************************************************************************************
- * Fonction qui somme
+ * Fonction qui somme.
+ * Lève une erreur "Impossible de sommer un tableau vide" si le tableau est vide
  */
-export function Somme(L: Readonly<number[]>): number {
-    console.log(L);
+export function Somme(L: readonly number[]): number {
     return NaN;
 }
 
 
 /***********************************************************************************************************************
  * Fonction qui fait la moyenne
+ * Lève une erreur "Impossible de faire la moyenne d'un tableau vide" si le tableau est vide
  */
-export function Moyenne(L: Readonly<number[]>): number {
-    console.log(L);
-    return NaN;
+export function Moyenne(L: readonly number[]): number {
+    return NaN
 }
 
 
@@ -46,18 +45,16 @@ export function Moyenne(L: Readonly<number[]>): number {
  * Fonction qui renvoie les nombres strictement supérieurs à un certain seuil
  * et triés par ordre croissant
  */
-export function NombresSupérieursA(min: number, notes: Readonly<number[]>): number[] {
-    console.log(min, notes);
+export function NombresSupérieursA(min: number, notes: readonly number[]): number[] {
     return [];
 }
 
 
 /***********************************************************************************************************************
- * Fonction qui renvoie les nombres strictement compris entre une valeur minimale et une valeur maximale
- * et triés par ordre croissant
+ * Fonction qui renvoie les nombres compris entre une valeur minimale et une valeur maximale
+ * (valeurs non inclues) et triés par ordre croissant
  */
-export function NombresComprisEntre(min: number, max: number, notes: Readonly<number[]>): number[] {
-    console.log(min, max, notes);
+export function NombresComprisEntre(min: number, max: number, notes: readonly number[]): number[] {
     return [];
 }
 
@@ -76,12 +73,13 @@ export function Zip<R extends unknown[]>(...LL: ZipArgs<R>): ZipResult<R> {
     return [];
 }
 
-
 /***********************************************************************************************************************
  * Produit scalaire entre deux vecteurs
+ * Lève une erreur "Les vecteurs doivent être non vides" si l'un des deux vecteurs est vide
+ * Lève une erreur "Les vecteurs doivent être de même taille" si les deux vecteurs n'ont pas la même taille
  */
-export function ProduitScalaire(V1: Readonly<number[]>, V2: Readonly<number[]>): number {
-    return 0;
+export function ProduitScalaire(V1: readonly number[], V2: readonly number[]): number {
+    return NaN;
 }
 
 
@@ -97,21 +95,11 @@ export function ProduitScalaire(V1: Readonly<number[]>, V2: Readonly<number[]>):
  *      - "M2 ne peut pas être vide"  -> La matrice M2 est vide (0 ligne u 0 colonne)
  *      - "Les matrices doivent avoir la même taille"  -> La matrice est vide (0 lignes u 0 colonnes)
  */
-type ScalarMatrix = readonly (readonly number[])[]; // à redéfinir
-type AjoutResult = {
-    success: true,
-    result: ScalarMatrix
-} | {
-    success: false,
-    error: AjoutError
-}; // à redéfinir
+type ScalarMatrix = unknown; // à redéfinir
+type AjoutResult  = unknown; // à redéfinir
 
-type AjoutMatrix = `M${1|2}`;
-type AjoutError = `${AjoutMatrix} n'est pas bien formée` 
-                | `${AjoutMatrix} ne peut pas être vide`
-                | `Les matrices doivent avoir la même taille`;
 export function AjoutMatrices(M1: ScalarMatrix, M2: ScalarMatrix): AjoutResult {
-    return {success: false, error: "M1 n'est pas bien formée"};
+    return undefined;
 }
 
 /**
@@ -121,7 +109,7 @@ export function AjoutMatrices(M1: ScalarMatrix, M2: ScalarMatrix): AjoutResult {
 
 
 
-/***********************************************************************************************************************
+/**
  * Codez une classe immuable Matrice implémentant l'ajout et la multiplication de matrices.
  */
 
