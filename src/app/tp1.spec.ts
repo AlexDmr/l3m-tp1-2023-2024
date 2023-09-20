@@ -24,8 +24,11 @@ function processTests<LT extends ((...args: any) => any)[]>(...L: fToTest<LT>) {
     for (const f of L) {
         describe(f.f.name, () => {
             for (const t of f.tests) {
-                it(`Appel de ${f.f.name}(${t.args.map((a: any) => JSON.stringify(a)).join(", ")})`, () => {
-                    const tNOK = t as TestNOK<typeof f.f>;
+                let msg = `${f.f.name}(${t.args.map((a: any) => JSON.stringify(a)).join(", ")})`;
+                const tNOK = t as TestNOK<typeof f.f>;
+                msg += (tNOK.errorExpected !== undefined) ? ` throws ${tNOK.errorExpected}` : ` returns ${JSON.stringify((t as TestOK<typeof f.f>).expectedResult)}`;
+                it(msg, () => {
+                    
                     if (tNOK.errorExpected !== undefined) {
                         expect(() => f.f(...t.args)).toThrowError(tNOK.errorExpected);
                     } else {
@@ -129,13 +132,18 @@ processTests(
         tests: [
             {args: [ [[1, 1], [1, 1]], [[1, 0], [0, 1]] ], expectedResult: {success: true, result: [[2, 1], [1, 2]]} },
             {args: [ [[1, 1], [1, 1]], [[1, 4], [0, 1]] ], expectedResult: {success: true, result: [[2, 5], [1, 2]]} },
-            // {args: [ [[1, 1], [1, 1], [1, 3]], [[1, -4], [0, 1], [65, -54]] ], expectedResult: [[2, -3], [1, 2], [66, -51]]},
-            // {args: [ [[1, 1], [1, 1]], [] ], expectedResult: "Les matrices doivent être non vides"},
-            // {args: [ [[1, 1], [1, 1]], [5] ], expectedResult: "Les matrices doivent être de même taille"},
-            // {args: [ [5], [[1, 1], [1, 1]] ], expectedResult: "Les matrices doivent être de même taille"},
-            // {args: [ [[1, 1], [1, 1]], [[], []] ], expectedResult: "Les matrices doivent être non vides"},
-            // {args: [ [[], []], [[1, 1], [1, 1]] ], expectedResult: "Les matrices doivent être non vides"},
-            // {args: [[], [[5]]], expectedResult: "Les matrices doivent être non vides"}
+            {args: [ [[1, 1], [1, 1], [1, 3]], [[1, -4], [0, 1], [65, -54]] ], expectedResult: {success: true, result: [[2, -3], [1, 2], [66, -51]]} },
+            {args: [ [[1, 1], [1, 1]], [] ], expectedResult: {success: false, error: "M2 ne peut pas être vide"} },
+            {args: [ [[1, 1], [1, 1]], [[]] ], expectedResult: {success: false, error: "M2 ne peut pas être vide"} },
+            {args: [ [], [[1, 1], [1, 1]]], expectedResult: {success: false, error: "M1 ne peut pas être vide"} },
+            {args: [ [[]], [[1, 1], [1, 1]]], expectedResult: {success: false, error: "M1 ne peut pas être vide"} },
+            {args: [ [[1, 1], [1, 1]], [[5]] ], expectedResult: {success: false, error: "Les matrices doivent avoir la même taille"} },
+            {args: [ [[5]], [[1, 1], [1, 1]] ], expectedResult: {success: false, error: "Les matrices doivent avoir la même taille"} },
+            {args: [ [[1, 1], [1, 1]], [[], []] ], expectedResult: {success: false, error: "M2 ne peut pas être vide"} },
+            {args: [ [[], []], [[1, 1], [1, 1]] ], expectedResult: {success: false, error: "M1 ne peut pas être vide"}},
+            {args: [[], [[5]]], expectedResult: {success: false, error: "M1 ne peut pas être vide"} },
+            {args: [ [[1], []], [[1, 1], [1, 1]] ], expectedResult: {success: false, error: "M1 n'est pas bien formée"}},
+            {args: [ [[], []], [[1, 1, 1], [1, 1]] ], expectedResult: {success: false, error: "M2 n'est pas bien formée"}},
         ]
     }
 );
