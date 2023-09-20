@@ -3,42 +3,45 @@
  * Fonction qui renvoie le minimum de deux nombres
  */
 export function min(a: number, b: number): number {
-    return NaN;
+    return a < b ? a : b;
 }
 
 
 /***********************************************************************************************************************
  * Fonction qui trie des nombres par ordre croissant
  */
-export function triCroissant(L: readonly number[]): readonly number[] {
-    return [];
+export function triCroissant(L: readonly number[]): number[] {
+    return [...L].sort( (a, b) => a - b );
 }
 
 
 /***********************************************************************************************************************
  * Fonction qui trie des nombres par ordre décroissant
  */
-export function triDécroissant(L: Readonly<number[]>): number[] {
-    console.log(L);
-    return [];
+export function triDécroissant(L: readonly number[]): number[] {
+    return [...L].sort( (a, b) => b - a );
 }
 
 
 /***********************************************************************************************************************
- * Fonction qui somme
+ * Fonction qui somme.
+ * Lève une erreur "Impossible de sommer un tableau vide" si le tableau est vide
  */
-export function Somme(L: Readonly<number[]>): number {
-    console.log(L);
-    return NaN;
+export function Somme(L: readonly number[]): number {
+    if (L.length === 0)
+        throw new Error("Impossible de sommer un tableau vide");
+    return L.reduce( (nb, x) => nb+ x );
 }
 
 
 /***********************************************************************************************************************
  * Fonction qui fait la moyenne
+ * Lève une erreur "Impossible de faire la moyenne d'un tableau vide" si le tableau est vide
  */
-export function Moyenne(L: Readonly<number[]>): number {
-    console.log(L);
-    return NaN;
+export function Moyenne(L: readonly number[]): number {
+    if (L.length === 0)
+        throw new Error("Impossible de faire la moyenne d'un tableau vide");
+    return Somme(L) / L.length;
 }
 
 
@@ -46,19 +49,17 @@ export function Moyenne(L: Readonly<number[]>): number {
  * Fonction qui renvoie les nombres strictement supérieurs à un certain seuil
  * et triés par ordre croissant
  */
-export function NombresSupérieursA(min: number, notes: Readonly<number[]>): number[] {
-    console.log(min, notes);
-    return [];
+export function NombresSupérieursA(min: number, notes: readonly number[]): number[] {
+    return triCroissant( notes.filter( x => x >= min ) );
 }
 
 
 /***********************************************************************************************************************
- * Fonction qui renvoie les nombres strictement compris entre une valeur minimale et une valeur maximale
- * et triés par ordre croissant
+ * Fonction qui renvoie les nombres compris entre une valeur minimale et une valeur maximale
+ * (valeurs non inclues) et triés par ordre croissant
  */
-export function NombresComprisEntre(min: number, max: number, notes: Readonly<number[]>): number[] {
-    console.log(min, max, notes);
-    return [];
+export function NombresComprisEntre(min: number, max: number, notes: readonly number[]): number[] {
+    return triCroissant( notes.filter( x => x > min && x < max ) );
 }
 
 
@@ -73,15 +74,25 @@ type ZipArgs<R extends unknown[]> = {
 type ZipResult<R extends unknown[]> = readonly R[];
 
 export function Zip<R extends unknown[]>(...LL: ZipArgs<R>): ZipResult<R> {
-    return [];
+    const Vmin = LL.length === 0 ? [] : LL.reduce( (vmin, v) => vmin.length <= v.length ? vmin : v );
+    const res = Vmin.map( (_, i) => LL.map( v => v[i]) as R );
+    console.log(res);
+    return res;
 }
-
 
 /***********************************************************************************************************************
  * Produit scalaire entre deux vecteurs
+ * Lève une erreur "Les vecteurs doivent être non vides" si l'un des deux vecteurs est vide
+ * Lève une erreur "Les vecteurs doivent être de même taille" si les deux vecteurs n'ont pas la même taille
  */
-export function ProduitScalaire(V1: Readonly<number[]>, V2: Readonly<number[]>): number {
-    return 0;
+export function ProduitScalaire(V1: readonly number[], V2: readonly number[]): number {
+    if (V1.length === 0 || V2.length === 0) {
+        throw new Error("Les vecteurs doivent être non vides");
+    }
+    if (V1.length !== V2.length) {
+        throw new Error("Les vecteurs doivent être de même taille");
+    }
+    return V1.reduce( (p, x, i) => p + x * V2[i], 0 );
 }
 
 
@@ -110,8 +121,20 @@ type AjoutMatrix = `M${1|2}`;
 type AjoutError = `${AjoutMatrix} n'est pas bien formée` 
                 | `${AjoutMatrix} ne peut pas être vide`
                 | `Les matrices doivent avoir la même taille`;
+// Revoie vrai ssi tous les vecteurs ont la même taille
+function wellFormedMatrix(M: ScalarMatrix): boolean {
+    return M.length === 0 || M.every( v => v.length === M[0].length );
+}
 export function AjoutMatrices(M1: ScalarMatrix, M2: ScalarMatrix): AjoutResult {
-    return {success: false, error: "M1 n'est pas bien formée"};
+    if (!wellFormedMatrix(M1)) return {success: false, error: "M1 n'est pas bien formée"};
+    if (!wellFormedMatrix(M2)) return {success: false, error: "M2 n'est pas bien formée"};
+    if (M1.length === 0 || M1[0].length === 0) return {success: false, error: "M1 ne peut pas être vide"};
+    if (M2.length === 0 || M2[0].length === 0) return {success: false, error: "M2 ne peut pas être vide"};
+    if (M1.length !== M2.length || M1[0].length !== M2[0].length) return {success: false, error: "Les matrices doivent avoir la même taille"};
+    return {
+        success: true, 
+        result: M1.map( (V1, i) => V1.map( (x, j) => x + M2[i][j] ) )
+    };
 }
 
 /**
@@ -121,7 +144,7 @@ export function AjoutMatrices(M1: ScalarMatrix, M2: ScalarMatrix): AjoutResult {
 
 
 
-/***********************************************************************************************************************
+/**
  * Codez une classe immuable Matrice implémentant l'ajout et la multiplication de matrices.
  */
 
