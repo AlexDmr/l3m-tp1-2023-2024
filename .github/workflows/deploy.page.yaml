@@ -17,6 +17,15 @@ jobs:
         run: |
           npm ci
 
+      - name: Capture output
+        uses: 'selfagency/capture-output@v1'
+        with:
+          cmd: yarn
+          args: run,test:ci
+          hide-warnings: true
+          fail: false
+          file: ${{ github.workspace }}/test-log/output.txt
+
       - name: test
         id: ngtest
         run: |
@@ -28,7 +37,9 @@ jobs:
           path: ${{ github.workspace }}/test-log/index.html
           contents: |
             <!doctype html>
-            <html>Résultats: <pre>
+            <html>Résultats ! 
+            <a href="output.txt">output.txt</a>
+            <pre>
             ${{ steps.ngtest.outputs.stdout }}
             ${{ steps.ngtest.outputs.stderr }}
             <pre></html>
