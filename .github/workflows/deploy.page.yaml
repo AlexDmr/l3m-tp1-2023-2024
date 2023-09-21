@@ -17,14 +17,23 @@ jobs:
         run: |
           npm ci
 
+      - name: test
+        id: ngtest
+        run: |
+          npm run test:ci
+          exit 0
+
       - name: Capture output
-        uses: 'selfagency/capture-output@v1'
+        if: always()
+        uses: DamianReeves/write-file-action@master
         with:
-          cmd: npm
-          args: run,test:ci
-          hide-warnings: false
-          fail: false
-          file: ${{ github.workspace }}/output.txt
+          path: ${{ github.workspace }}/test-log/index.html
+          contents: |
+            <!doctype html>
+            <html><pre>
+            ${{ steps.ngtest.outputs.stdout }}
+            <pre></html>
+          write-mode: overwrite
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
