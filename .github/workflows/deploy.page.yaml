@@ -21,7 +21,7 @@ jobs:
         uses: 'selfagency/capture-output@v1'
         with:
           cmd: npm
-          args: run,test,--verbose
+          args: run,test:ci
           hide-warnings: false
           fail: false
           file: ${{ github.workspace }}/test-log/output.txt
@@ -30,4 +30,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: test-log # The folder the action should deploy.
-          BRANCH: gh-pages
+          
