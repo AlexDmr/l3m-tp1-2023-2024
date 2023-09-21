@@ -24,7 +24,7 @@ jobs:
           args: run,test:ci
           hide-warnings: false
           fail: false
-          file: ${{ github.workspace }}/test-log/output.txt
+          file: ${{ github.workspace }}/output.txt
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
