@@ -23,7 +23,6 @@ jobs:
           npm run test:ci
 
       - name: Capture output
-        if: always()
         uses: DamianReeves/write-file-action@master
         with:
           path: ${{ github.workspace }}/test-log/index.html
@@ -36,7 +35,6 @@ jobs:
           write-mode: overwrite
 
       - name: Deploy 🚀
-        if: always()
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: test-log # The folder the action should deploy.
