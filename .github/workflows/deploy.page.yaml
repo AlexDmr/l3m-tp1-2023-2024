@@ -21,7 +21,6 @@ jobs:
         id: ngtest
         run: |
           npm run test:ci
-          exit 0
 
       - name: Capture output
         if: always()
@@ -30,8 +29,9 @@ jobs:
           path: ${{ github.workspace }}/test-log/index.html
           contents: |
             <!doctype html>
-            <html><pre>
+            <html>Résultats: <pre>
             ${{ steps.ngtest.outputs.stdout }}
+            ${{ steps.ngtest.outputs.stderr }}
             <pre></html>
           write-mode: overwrite
 
