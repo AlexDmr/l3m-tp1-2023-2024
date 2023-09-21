@@ -26,23 +26,15 @@ jobs:
           fail: false
           file: ${{ github.workspace }}/test-log/output.txt
 
-      - name: test
-        id: ngtest
-        run: |
-          npm run test:ci
-
       - name: Capture output
         uses: DamianReeves/write-file-action@master
         with:
           path: ${{ github.workspace }}/test-log/index.html
           contents: |
             <!doctype html>
-            <html>Résultats ! 
+            <html><body>Résultats ici :
             <a href="output.txt">output.txt</a>
-            <pre>
-            ${{ steps.ngtest.outputs.stdout }}
-            ${{ steps.ngtest.outputs.stderr }}
-            <pre></html>
+            </body></html>
           write-mode: overwrite
 
       - name: Deploy 🚀
