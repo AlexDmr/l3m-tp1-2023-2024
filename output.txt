@@ -2,216 +2,213 @@ yarn run v1.22.19
 $ ng test --browsers=ChromeHeadless --watch=false || echo 'banco'
 - Generating browser application bundles (phase: setup)...
 ✔ Browser application bundle generation complete.
-21 09 2023 09:58:01.713:INFO [karma-server]: Karma v6.4.2 server started at http://localhost:9876/
-21 09 2023 09:58:01.715:INFO [launcher]: Launching browsers ChromeHeadless with concurrency unlimited
-21 09 2023 09:58:01.718:INFO [launcher]: Starting browser ChromeHeadless
-21 09 2023 09:58:02.701:INFO [Chrome Headless 116.0.5845.187 (Linux x86_64)]: Connected on socket 0ugS6sIUYgMXDNXsAAAB with id 50958916
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 0 of 55 SUCCESS (0 secs / 0 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) ProduitScalaire ProduitScalaire([], [5]) throws Les vecteurs doivent être non vides FAILED
-	Expected function to throw an Error.
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:33:54)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 1 of 55 (1 FAILED) (0 secs / 0.004 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) ProduitScalaire ProduitScalaire([2,3], [4]) throws Les vecteurs doivent être de même taille FAILED
-	Expected function to throw an Error.
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:33:54)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 2 of 55 (2 FAILED) (0 secs / 0.005 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) ProduitScalaire ProduitScalaire([5], []) throws Les vecteurs doivent être non vides FAILED
-	Expected function to throw an Error.
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:33:54)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 3 of 55 (3 FAILED) (0 secs / 0.007 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) ProduitScalaire ProduitScalaire([4,1], [1,3]) returns 7 FAILED
-	Expected NaN to equal 7.
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 4 of 55 (4 FAILED) (0 secs / 0.009 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) ProduitScalaire ProduitScalaire([59,51,63,95,64,-38,-21,-6,16,44], [23,29,-12,-23,40,-4,-40,-60,-98,-52]) returns -49 FAILED
-	Expected NaN to equal -49.
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 5 of 55 (5 FAILED) (0 secs / 0.01 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) ProduitScalaire ProduitScalaire([1,1], [1,1]) returns 2 FAILED
+26 09 2023 15:23:41.873:INFO [karma-server]: Karma v6.4.2 server started at http://localhost:9876/
+26 09 2023 15:23:41.876:INFO [launcher]: Launching browsers ChromeHeadless with concurrency unlimited
+26 09 2023 15:23:41.911:INFO [launcher]: Starting browser ChromeHeadless
+26 09 2023 15:23:43.116:INFO [Chrome Headless 117.0.5938.88 (Linux x86_64)]: Connected on socket R9kBkhH1Q8zXljW3AAAB with id 78317319
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 0 of 55 SUCCESS (0 secs / 0 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) ProduitScalaire ProduitScalaire([1,1], [1,1]) returns 2 FAILED
 	Expected NaN to equal 2.
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 6 of 55 (6 FAILED) (0 secs / 0.011 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64): Executed 7 of 55 (6 FAILED) (0 secs / 0.012 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64): Executed 8 of 55 (6 FAILED) (0 secs / 0.012 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) NombresSupérieursA NombresSupérieursA(10, [59,51,63,95,64,-38,-21,-6,16,44]) returns [16,44,51,59,63,64,95] FAILED
-	Expected $.length = 0 to equal 7.
-	Expected $[0] = undefined to equal 16.
-	Expected $[1] = undefined to equal 44.
-	Expected $[2] = undefined to equal 51.
-	Expected $[3] = undefined to equal 59.
-	Expected $[4] = undefined to equal 63.
-	Expected $[5] = undefined to equal 64.
-	Expected $[6] = undefined to equal 95.
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 1 of 55 (1 FAILED) (0 secs / 0.007 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) ProduitScalaire ProduitScalaire([5], []) throws Les vecteurs doivent être non vides FAILED
+	Expected function to throw an Error.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:33:54)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 2 of 55 (2 FAILED) (0 secs / 0.008 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) ProduitScalaire ProduitScalaire([4,1], [1,3]) returns 7 FAILED
+	Expected NaN to equal 7.
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 9 of 55 (7 FAILED) (0 secs / 0.013 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) NombresSupérieursA NombresSupérieursA(50, [59,51,63,95,64,-38,-21,-6,16,44]) returns [51,59,63,64,95] FAILED
-	Expected $.length = 0 to equal 5.
-	Expected $[0] = undefined to equal 51.
-	Expected $[1] = undefined to equal 59.
-	Expected $[2] = undefined to equal 63.
-	Expected $[3] = undefined to equal 64.
-	Expected $[4] = undefined to equal 95.
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 3 of 55 (3 FAILED) (0 secs / 0.009 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) ProduitScalaire ProduitScalaire([], [5]) throws Les vecteurs doivent être non vides FAILED
+	Expected function to throw an Error.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:33:54)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 4 of 55 (4 FAILED) (0 secs / 0.01 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) ProduitScalaire ProduitScalaire([59,51,63,95,64,-38,-21,-6,16,44], [23,29,-12,-23,40,-4,-40,-60,-98,-52]) returns -49 FAILED
+	Expected NaN to equal -49.
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 10 of 55 (8 FAILED) (0 secs / 0.017 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) NombresSupérieursA NombresSupérieursA(20, [59,51,63,95,64,-38,-21,-6,16,44]) returns [44,51,59,63,64,95] FAILED
-	Expected $.length = 0 to equal 6.
-	Expected $[0] = undefined to equal 44.
-	Expected $[1] = undefined to equal 51.
-	Expected $[2] = undefined to equal 59.
-	Expected $[3] = undefined to equal 63.
-	Expected $[4] = undefined to equal 64.
-	Expected $[5] = undefined to equal 95.
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 5 of 55 (5 FAILED) (0 secs / 0.012 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) ProduitScalaire ProduitScalaire([2,3], [4]) throws Les vecteurs doivent être de même taille FAILED
+	Expected function to throw an Error.
 	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at UserContext.apply (src/app/tp1.spec.ts:33:54)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 11 of 55 (9 FAILED) (0 secs / 0.018 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) AjoutMatrices AjoutMatrices([[1,1],[1,1]], [[1,0],[0,1]]) returns {"success":true,"result":[[2,1],[1,2]]} FAILED
-	Expected undefined to equal Object({ success: true, result: [ [ 2, 1 ], [ 1, 2 ] ] }).
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 12 of 55 (10 FAILED) (0 secs / 0.019 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) AjoutMatrices AjoutMatrices([[1,1],[1,1],[1,3]], [[1,-4],[0,1],[65,-54]]) returns {"success":true,"result":[[2,-3],[1,2],[66,-51]]} FAILED
-	Expected undefined to equal Object({ success: true, result: [ [ 2, -3 ], [ 1, 2 ], [ 66, -51 ] ] }).
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 13 of 55 (11 FAILED) (0 secs / 0.02 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) AjoutMatrices AjoutMatrices([[],[]], [[1,1,1],[1,1]]) returns {"success":false,"error":"M2 n'est pas bien formée"} FAILED
-	Expected undefined to equal Object({ success: false, error: 'M2 n'est pas bien formée' }).
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 14 of 55 (12 FAILED) (0 secs / 0.02 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) AjoutMatrices AjoutMatrices([[1,1],[1,1]], [[5]]) returns {"success":false,"error":"Les matrices doivent avoir la même taille"} FAILED
-	Expected undefined to equal Object({ success: false, error: 'Les matrices doivent avoir la même taille' }).
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 15 of 55 (13 FAILED) (0 secs / 0.021 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) AjoutMatrices AjoutMatrices([], [[5]]) returns {"success":false,"error":"M1 ne peut pas être vide"} FAILED
-	Expected undefined to equal Object({ success: false, error: 'M1 ne peut pas être vide' }).
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 16 of 55 (14 FAILED) (0 secs / 0.022 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) AjoutMatrices AjoutMatrices([[1],[]], [[1,1],[1,1]]) returns {"success":false,"error":"M1 n'est pas bien formée"} FAILED
-	Expected undefined to equal Object({ success: false, error: 'M1 n'est pas bien formée' }).
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 17 of 55 (15 FAILED) (0 secs / 0.023 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) AjoutMatrices AjoutMatrices([[1,1],[1,1]], [[1,4],[0,1]]) returns {"success":true,"result":[[2,5],[1,2]]} FAILED
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 6 of 55 (6 FAILED) (0 secs / 0.014 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) AjoutMatrices AjoutMatrices([[1,1],[1,1]], [[1,4],[0,1]]) returns {"success":true,"result":[[2,5],[1,2]]} FAILED
 	Expected undefined to equal Object({ success: true, result: [ [ 2, 5 ], [ 1, 2 ] ] }).
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 18 of 55 (16 FAILED) (0 secs / 0.024 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) AjoutMatrices AjoutMatrices([[]], [[1,1],[1,1]]) returns {"success":false,"error":"M1 ne peut pas être vide"} FAILED
-	Expected undefined to equal Object({ success: false, error: 'M1 ne peut pas être vide' }).
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 19 of 55 (17 FAILED) (0 secs / 0.024 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) AjoutMatrices AjoutMatrices([[1,1],[1,1]], [[]]) returns {"success":false,"error":"M2 ne peut pas être vide"} FAILED
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 7 of 55 (7 FAILED) (0 secs / 0.015 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) AjoutMatrices AjoutMatrices([[1,1],[1,1]], [[],[]]) returns {"success":false,"error":"M2 ne peut pas être vide"} FAILED
 	Expected undefined to equal Object({ success: false, error: 'M2 ne peut pas être vide' }).
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 20 of 55 (18 FAILED) (0 secs / 0.025 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) AjoutMatrices AjoutMatrices([[],[]], [[1,1],[1,1]]) returns {"success":false,"error":"M1 ne peut pas être vide"} FAILED
-	Expected undefined to equal Object({ success: false, error: 'M1 ne peut pas être vide' }).
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 8 of 55 (8 FAILED) (0 secs / 0.017 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) AjoutMatrices AjoutMatrices([[1,1],[1,1],[1,3]], [[1,-4],[0,1],[65,-54]]) returns {"success":true,"result":[[2,-3],[1,2],[66,-51]]} FAILED
+	Expected undefined to equal Object({ success: true, result: [ [ 2, -3 ], [ 1, 2 ], [ 66, -51 ] ] }).
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 21 of 55 (19 FAILED) (0 secs / 0.026 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) AjoutMatrices AjoutMatrices([], [[1,1],[1,1]]) returns {"success":false,"error":"M1 ne peut pas être vide"} FAILED
-	Expected undefined to equal Object({ success: false, error: 'M1 ne peut pas être vide' }).
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 22 of 55 (20 FAILED) (0 secs / 0.026 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) AjoutMatrices AjoutMatrices([[1,1],[1,1]], []) returns {"success":false,"error":"M2 ne peut pas être vide"} FAILED
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 9 of 55 (9 FAILED) (0 secs / 0.018 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) AjoutMatrices AjoutMatrices([[1,1],[1,1]], []) returns {"success":false,"error":"M2 ne peut pas être vide"} FAILED
 	Expected undefined to equal Object({ success: false, error: 'M2 ne peut pas être vide' }).
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 23 of 55 (21 FAILED) (0 secs / 0.027 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) AjoutMatrices AjoutMatrices([[1,1],[1,1]], [[],[]]) returns {"success":false,"error":"M2 ne peut pas être vide"} FAILED
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 10 of 55 (10 FAILED) (0 secs / 0.02 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) AjoutMatrices AjoutMatrices([], [[1,1],[1,1]]) returns {"success":false,"error":"M1 ne peut pas être vide"} FAILED
+	Expected undefined to equal Object({ success: false, error: 'M1 ne peut pas être vide' }).
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 11 of 55 (11 FAILED) (0 secs / 0.021 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) AjoutMatrices AjoutMatrices([[1,1],[1,1]], [[]]) returns {"success":false,"error":"M2 ne peut pas être vide"} FAILED
 	Expected undefined to equal Object({ success: false, error: 'M2 ne peut pas être vide' }).
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 24 of 55 (22 FAILED) (0 secs / 0.027 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) AjoutMatrices AjoutMatrices([[5]], [[1,1],[1,1]]) returns {"success":false,"error":"Les matrices doivent avoir la même taille"} FAILED
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 12 of 55 (12 FAILED) (0 secs / 0.022 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) AjoutMatrices AjoutMatrices([[]], [[1,1],[1,1]]) returns {"success":false,"error":"M1 ne peut pas être vide"} FAILED
+	Expected undefined to equal Object({ success: false, error: 'M1 ne peut pas être vide' }).
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 13 of 55 (13 FAILED) (0 secs / 0.023 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) AjoutMatrices AjoutMatrices([[1,1],[1,1]], [[5]]) returns {"success":false,"error":"Les matrices doivent avoir la même taille"} FAILED
 	Expected undefined to equal Object({ success: false, error: 'Les matrices doivent avoir la même taille' }).
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 25 of 55 (23 FAILED) (0 secs / 0.027 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) NombresComprisEntre NombresComprisEntre(0, 100, [59,51,63,95,64,-38,-21,-6,16,44]) returns [16,44,51,59,63,64,95] FAILED
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 14 of 55 (14 FAILED) (0 secs / 0.024 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) AjoutMatrices AjoutMatrices([[5]], [[1,1],[1,1]]) returns {"success":false,"error":"Les matrices doivent avoir la même taille"} FAILED
+	Expected undefined to equal Object({ success: false, error: 'Les matrices doivent avoir la même taille' }).
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 15 of 55 (15 FAILED) (0 secs / 0.024 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) AjoutMatrices AjoutMatrices([[],[]], [[1,1,1],[1,1]]) returns {"success":false,"error":"M2 n'est pas bien formée"} FAILED
+	Expected undefined to equal Object({ success: false, error: 'M2 n'est pas bien formée' }).
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 16 of 55 (16 FAILED) (0 secs / 0.025 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) AjoutMatrices AjoutMatrices([], [[5]]) returns {"success":false,"error":"M1 ne peut pas être vide"} FAILED
+	Expected undefined to equal Object({ success: false, error: 'M1 ne peut pas être vide' }).
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 17 of 55 (17 FAILED) (0 secs / 0.026 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) AjoutMatrices AjoutMatrices([[1],[]], [[1,1],[1,1]]) returns {"success":false,"error":"M1 n'est pas bien formée"} FAILED
+	Expected undefined to equal Object({ success: false, error: 'M1 n'est pas bien formée' }).
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 18 of 55 (18 FAILED) (0 secs / 0.027 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) AjoutMatrices AjoutMatrices([[],[]], [[1,1],[1,1]]) returns {"success":false,"error":"M1 ne peut pas être vide"} FAILED
+	Expected undefined to equal Object({ success: false, error: 'M1 ne peut pas être vide' }).
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 19 of 55 (19 FAILED) (0 secs / 0.027 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) AjoutMatrices AjoutMatrices([[1,1],[1,1]], [[1,0],[0,1]]) returns {"success":true,"result":[[2,1],[1,2]]} FAILED
+	Expected undefined to equal Object({ success: true, result: [ [ 2, 1 ], [ 1, 2 ] ] }).
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 20 of 55 (20 FAILED) (0 secs / 0.028 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) Somme Somme([23,29,-12,-23,40,-4,-40,-60,-98,-52]) returns -197 FAILED
+	Expected NaN to equal -197.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 21 of 55 (21 FAILED) (0 secs / 0.028 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) Somme Somme([10]) returns 10 FAILED
+	Expected NaN to equal 10.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 22 of 55 (22 FAILED) (0 secs / 0.029 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) Somme Somme([59,51,63,95,64,-38,-21,-6,16,44]) returns 327 FAILED
+	Expected NaN to equal 327.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 23 of 55 (23 FAILED) (0 secs / 0.029 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) Somme Somme([]) throws Impossible de sommer un tableau vide FAILED
+	Expected function to throw an Error.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:33:54)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 24 of 55 (24 FAILED) (0 secs / 0.03 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) NombresComprisEntre NombresComprisEntre(10, 20, [59,51,63,95,64,-38,-21,-6,16,44]) returns [16] FAILED
+	Expected $.length = 0 to equal 1.
+	Expected $[0] = undefined to equal 16.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 25 of 55 (25 FAILED) (0 secs / 0.031 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) NombresComprisEntre NombresComprisEntre(0, 100, [59,51,63,95,64,-38,-21,-6,16,44]) returns [16,44,51,59,63,64,95] FAILED
 	Expected $.length = 0 to equal 7.
 	Expected $[0] = undefined to equal 16.
 	Expected $[1] = undefined to equal 44.
@@ -225,67 +222,10 @@ Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 25 of 55 (23 FAILED) (0 
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 26 of 55 (24 FAILED) (0 secs / 0.028 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) NombresComprisEntre NombresComprisEntre(10, 20, [59,51,63,95,64,-38,-21,-6,16,44]) returns [16] FAILED
-	Expected $.length = 0 to equal 1.
-	Expected $[0] = undefined to equal 16.
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 27 of 55 (25 FAILED) (0 secs / 0.029 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64): Executed 28 of 55 (25 FAILED) (0 secs / 0.03 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64): Executed 29 of 55 (25 FAILED) (0 secs / 0.03 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) min min(17, 27) returns 17 FAILED
-	Expected NaN to equal 17.
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 30 of 55 (26 FAILED) (0 secs / 0.03 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) min min(17, 15) returns 15 FAILED
-	Expected NaN to equal 15.
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 31 of 55 (27 FAILED) (0 secs / 0.03 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) min min(4, 4) returns 4 FAILED
-	Expected NaN to equal 4.
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 32 of 55 (28 FAILED) (0 secs / 0.03 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64): Executed 33 of 55 (28 FAILED) (0 secs / 0.176 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64): Executed 34 of 55 (28 FAILED) (0 secs / 0.187 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64): Executed 35 of 55 (28 FAILED) (0 secs / 0.196 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) Zip Zip([1,2,3], ["a","b","c"]) returns [[1,"a"],[2,"b"],[3,"c"]] FAILED
-	Expected $.length = 0 to equal 3.
-	Expected $[0] = undefined to equal [ 1, 'a' ].
-	Expected $[1] = undefined to equal [ 2, 'b' ].
-	Expected $[2] = undefined to equal [ 3, 'c' ].
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 36 of 55 (29 FAILED) (0 secs / 0.197 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64): Executed 37 of 55 (29 FAILED) (0 secs / 0.197 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) Zip Zip([1], ["a","b","c"], [true,false,false]) returns [[1,"a",true]] FAILED
-	Expected $.length = 0 to equal 1.
-	Expected $[0] = undefined to equal [ 1, 'a', true ].
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 38 of 55 (30 FAILED) (0 secs / 0.197 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) Zip Zip([1,2,3], ["a","b","c"], [true,false,false]) returns [[1,"a",true],[2,"b",false],[3,"c",false]] FAILED
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 26 of 55 (26 FAILED) (0 secs / 0.032 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64): Executed 27 of 55 (26 FAILED) (0 secs / 0.033 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64): Executed 28 of 55 (26 FAILED) (0 secs / 0.034 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) Zip Zip([1,2,3], ["a","b","c"], [true,false,false]) returns [[1,"a",true],[2,"b",false],[3,"c",false]] FAILED
 	Expected $.length = 0 to equal 3.
 	Expected $[0] = undefined to equal [ 1, 'a', true ].
 	Expected $[1] = undefined to equal [ 2, 'b', false ].
@@ -295,8 +235,18 @@ Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 38 of 55 (30 FAILED) (0 
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 39 of 55 (31 FAILED) (0 secs / 0.198 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) Zip Zip([1,2,3], ["a","b","c"], ["x","y","z"], [true,false,true]) returns [[1,"a","x",true],[2,"b","y",false],[3,"c","z",true]] FAILED
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 29 of 55 (27 FAILED) (0 secs / 0.035 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64): Executed 30 of 55 (27 FAILED) (0 secs / 0.035 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) Zip Zip([1], ["a","b","c"], [true,false,false]) returns [[1,"a",true]] FAILED
+	Expected $.length = 0 to equal 1.
+	Expected $[0] = undefined to equal [ 1, 'a', true ].
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 31 of 55 (28 FAILED) (0 secs / 0.036 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) Zip Zip([1,2,3], ["a","b","c"], ["x","y","z"], [true,false,true]) returns [[1,"a","x",true],[2,"b","y",false],[3,"c","z",true]] FAILED
 	Expected $.length = 0 to equal 3.
 	Expected $[0] = undefined to equal [ 1, 'a', 'x', true ].
 	Expected $[1] = undefined to equal [ 2, 'b', 'y', false ].
@@ -306,46 +256,28 @@ Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 39 of 55 (31 FAILED) (0 
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 40 of 55 (32 FAILED) (0 secs / 0.199 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) triCroissant triCroissant([23,29,-12,-23,40,-4,-40,-60,-98,-52]) returns [-98,-60,-52,-40,-23,-12,-4,23,29,40] FAILED
-	Expected $.length = 0 to equal 10.
-	Expected $[0] = undefined to equal -98.
-	Expected $[1] = undefined to equal -60.
-	Expected $[2] = undefined to equal -52.
-	Expected $[3] = undefined to equal -40.
-	Expected $[4] = undefined to equal -23.
-	Expected $[5] = undefined to equal -12.
-	Expected $[6] = undefined to equal -4.
-	Expected $[7] = undefined to equal 23.
-	Expected $[8] = undefined to equal 29.
-	Expected $[9] = undefined to equal 40.
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 32 of 55 (29 FAILED) (0 secs / 0.037 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) Zip Zip([1,2,3], ["a","b","c"]) returns [[1,"a"],[2,"b"],[3,"c"]] FAILED
+	Expected $.length = 0 to equal 3.
+	Expected $[0] = undefined to equal [ 1, 'a' ].
+	Expected $[1] = undefined to equal [ 2, 'b' ].
+	Expected $[2] = undefined to equal [ 3, 'c' ].
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 41 of 55 (33 FAILED) (0 secs / 0.2 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64): Executed 42 of 55 (33 FAILED) (0 secs / 0.2 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) triCroissant triCroissant([59,51,63,95,64,-38,-21,-6,16,44]) returns [-38,-21,-6,16,44,51,59,63,64,95] FAILED
-	Expected $.length = 0 to equal 10.
-	Expected $[0] = undefined to equal -38.
-	Expected $[1] = undefined to equal -21.
-	Expected $[2] = undefined to equal -6.
-	Expected $[3] = undefined to equal 16.
-	Expected $[4] = undefined to equal 44.
-	Expected $[5] = undefined to equal 51.
-	Expected $[6] = undefined to equal 59.
-	Expected $[7] = undefined to equal 63.
-	Expected $[8] = undefined to equal 64.
-	Expected $[9] = undefined to equal 95.
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 33 of 55 (30 FAILED) (0 secs / 0.038 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) triDécroissant triDécroissant([10]) returns [10] FAILED
+	Expected $.length = 0 to equal 1.
+	Expected $[0] = undefined to equal 10.
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 43 of 55 (34 FAILED) (0 secs / 0.201 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64): Executed 44 of 55 (34 FAILED) (0 secs / 0.201 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) triDécroissant triDécroissant([59,51,63,95,64,-38,-21,-6,16,44]) returns [95,64,63,59,51,44,16,-6,-21,-38] FAILED
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 34 of 55 (31 FAILED) (0 secs / 0.039 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) triDécroissant triDécroissant([59,51,63,95,64,-38,-21,-6,16,44]) returns [95,64,63,59,51,44,16,-6,-21,-38] FAILED
 	Expected $.length = 0 to equal 10.
 	Expected $[0] = undefined to equal 95.
 	Expected $[1] = undefined to equal 64.
@@ -362,17 +294,8 @@ Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 43 of 55 (34 FAILED) (0 
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 45 of 55 (35 FAILED) (0 secs / 0.202 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) triDécroissant triDécroissant([10]) returns [10] FAILED
-	Expected $.length = 0 to equal 1.
-	Expected $[0] = undefined to equal 10.
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 46 of 55 (36 FAILED) (0 secs / 0.202 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) triDécroissant triDécroissant([23,29,-12,-23,40,-4,-40,-60,-98,-52]) returns [40,29,23,-4,-12,-23,-40,-52,-60,-98] FAILED
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 35 of 55 (32 FAILED) (0 secs / 0.04 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) triDécroissant triDécroissant([23,29,-12,-23,40,-4,-40,-60,-98,-52]) returns [40,29,23,-4,-12,-23,-40,-52,-60,-98] FAILED
 	Expected $.length = 0 to equal 10.
 	Expected $[0] = undefined to equal 40.
 	Expected $[1] = undefined to equal 29.
@@ -389,74 +312,151 @@ Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 46 of 55 (36 FAILED) (0 
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 47 of 55 (37 FAILED) (0 secs / 0.204 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) Somme Somme([23,29,-12,-23,40,-4,-40,-60,-98,-52]) returns -197 FAILED
-	Expected NaN to equal -197.
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 36 of 55 (33 FAILED) (0 secs / 0.041 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64): Executed 37 of 55 (33 FAILED) (0 secs / 0.041 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64): Executed 38 of 55 (33 FAILED) (0 secs / 0.041 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64): Executed 39 of 55 (33 FAILED) (0 secs / 0.041 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) NombresSupérieursA NombresSupérieursA(20, [59,51,63,95,64,-38,-21,-6,16,44]) returns [44,51,59,63,64,95] FAILED
+	Expected $.length = 0 to equal 6.
+	Expected $[0] = undefined to equal 44.
+	Expected $[1] = undefined to equal 51.
+	Expected $[2] = undefined to equal 59.
+	Expected $[3] = undefined to equal 63.
+	Expected $[4] = undefined to equal 64.
+	Expected $[5] = undefined to equal 95.
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 48 of 55 (38 FAILED) (0 secs / 0.205 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) Somme Somme([10]) returns 10 FAILED
-	Expected NaN to equal 10.
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 40 of 55 (34 FAILED) (0 secs / 0.042 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) NombresSupérieursA NombresSupérieursA(50, [59,51,63,95,64,-38,-21,-6,16,44]) returns [51,59,63,64,95] FAILED
+	Expected $.length = 0 to equal 5.
+	Expected $[0] = undefined to equal 51.
+	Expected $[1] = undefined to equal 59.
+	Expected $[2] = undefined to equal 63.
+	Expected $[3] = undefined to equal 64.
+	Expected $[4] = undefined to equal 95.
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 49 of 55 (39 FAILED) (0 secs / 0.206 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) Somme Somme([]) throws Impossible de sommer un tableau vide FAILED
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 41 of 55 (35 FAILED) (0 secs / 0.042 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) NombresSupérieursA NombresSupérieursA(10, [59,51,63,95,64,-38,-21,-6,16,44]) returns [16,44,51,59,63,64,95] FAILED
+	Expected $.length = 0 to equal 7.
+	Expected $[0] = undefined to equal 16.
+	Expected $[1] = undefined to equal 44.
+	Expected $[2] = undefined to equal 51.
+	Expected $[3] = undefined to equal 59.
+	Expected $[4] = undefined to equal 63.
+	Expected $[5] = undefined to equal 64.
+	Expected $[6] = undefined to equal 95.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 42 of 55 (36 FAILED) (0 secs / 0.043 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) Moyenne Moyenne([]) throws Impossible de faire la moyenne d'un tableau vide FAILED
 	Expected function to throw an Error.
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:33:54)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 50 of 55 (40 FAILED) (0 secs / 0.207 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) Somme Somme([59,51,63,95,64,-38,-21,-6,16,44]) returns 327 FAILED
-	Expected NaN to equal 327.
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 51 of 55 (41 FAILED) (0 secs / 0.208 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) Moyenne Moyenne([23,29,-12,-23,40,-4,-40,-60,-98,-52]) returns -19.7 FAILED
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 43 of 55 (37 FAILED) (0 secs / 0.043 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) Moyenne Moyenne([23,29,-12,-23,40,-4,-40,-60,-98,-52]) returns -19.7 FAILED
 	Expected NaN to equal -19.7.
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 52 of 55 (42 FAILED) (0 secs / 0.209 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) Moyenne Moyenne([10]) returns 10 FAILED
-	Expected NaN to equal 10.
-	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
-	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
-	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 53 of 55 (43 FAILED) (0 secs / 0.209 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) Moyenne Moyenne([59,51,63,95,64,-38,-21,-6,16,44]) returns 32.7 FAILED
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 44 of 55 (38 FAILED) (0 secs / 0.043 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) Moyenne Moyenne([59,51,63,95,64,-38,-21,-6,16,44]) returns 32.7 FAILED
 	Expected NaN to equal 32.7.
 	    at <Jasmine>
 	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 54 of 55 (44 FAILED) (0 secs / 0.209 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64) Moyenne Moyenne([]) throws Impossible de faire la moyenne d'un tableau vide FAILED
-	Expected function to throw an Error.
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 45 of 55 (39 FAILED) (0 secs / 0.044 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) Moyenne Moyenne([10]) returns 10 FAILED
+	Expected NaN to equal 10.
 	    at <Jasmine>
-	    at UserContext.apply (src/app/tp1.spec.ts:33:54)
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
 	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
 	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
-Chrome Headless 116.0.5845.187 (Linux x86_64): Executed 55 of 55 (45 FAILED) (0 secs / 0.21 secs)
-[1A[2KChrome Headless 116.0.5845.187 (Linux x86_64): Executed 55 of 55 (45 FAILED) (0.325 secs / 0.21 secs)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 46 of 55 (40 FAILED) (0 secs / 0.044 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64): Executed 47 of 55 (40 FAILED) (0 secs / 0.164 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64): Executed 48 of 55 (40 FAILED) (0 secs / 0.177 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64): Executed 49 of 55 (40 FAILED) (0 secs / 0.189 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64): Executed 50 of 55 (40 FAILED) (0 secs / 0.189 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) triCroissant triCroissant([23,29,-12,-23,40,-4,-40,-60,-98,-52]) returns [-98,-60,-52,-40,-23,-12,-4,23,29,40] FAILED
+	Expected $.length = 0 to equal 10.
+	Expected $[0] = undefined to equal -98.
+	Expected $[1] = undefined to equal -60.
+	Expected $[2] = undefined to equal -52.
+	Expected $[3] = undefined to equal -40.
+	Expected $[4] = undefined to equal -23.
+	Expected $[5] = undefined to equal -12.
+	Expected $[6] = undefined to equal -4.
+	Expected $[7] = undefined to equal 23.
+	Expected $[8] = undefined to equal 29.
+	Expected $[9] = undefined to equal 40.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 51 of 55 (41 FAILED) (0 secs / 0.19 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) triCroissant triCroissant([59,51,63,95,64,-38,-21,-6,16,44]) returns [-38,-21,-6,16,44,51,59,63,64,95] FAILED
+	Expected $.length = 0 to equal 10.
+	Expected $[0] = undefined to equal -38.
+	Expected $[1] = undefined to equal -21.
+	Expected $[2] = undefined to equal -6.
+	Expected $[3] = undefined to equal 16.
+	Expected $[4] = undefined to equal 44.
+	Expected $[5] = undefined to equal 51.
+	Expected $[6] = undefined to equal 59.
+	Expected $[7] = undefined to equal 63.
+	Expected $[8] = undefined to equal 64.
+	Expected $[9] = undefined to equal 95.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 52 of 55 (42 FAILED) (0 secs / 0.191 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) min min(17, 15) returns 15 FAILED
+	Expected NaN to equal 15.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 53 of 55 (43 FAILED) (0 secs / 0.192 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) min min(17, 27) returns 17 FAILED
+	Expected NaN to equal 17.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 54 of 55 (44 FAILED) (0 secs / 0.193 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64) min min(4, 4) returns 4 FAILED
+	Expected NaN to equal 4.
+	    at <Jasmine>
+	    at UserContext.apply (src/app/tp1.spec.ts:36:48)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)
+	    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)
+	    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)
+Chrome Headless 117.0.5938.88 (Linux x86_64): Executed 55 of 55 (45 FAILED) (0 secs / 0.194 secs)
+[1A[2KChrome Headless 117.0.5938.88 (Linux x86_64): Executed 55 of 55 (45 FAILED) (0.302 secs / 0.194 secs)
 TOTAL: 45 FAILED, 10 SUCCESS
 ✔ Browser application bundle generation complete.
 ✔ Browser application bundle generation complete.
 banco
-Done in 22.95s.
+Done in 24.14s.
